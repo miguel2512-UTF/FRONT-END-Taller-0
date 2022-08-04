@@ -44,6 +44,10 @@ nav .logo img{
     height: 3rem;
 }
 
+nav .logo i{
+    display: none;
+}
+
 nav .menu ul li{
     display: inline-flex;
     padding: 1rem;
@@ -54,6 +58,10 @@ nav .menu ul li a{
     text-decoration: none;
     color: white;
     padding: 0.5rem 1rem;
+}
+
+.menu-hr{
+    display: none;
 }
 
 .banner{
@@ -721,4 +729,75 @@ footer{
 .form-footer a{
     color: white;
     text-decoration: none   ;
+}
+
+@media screen and (max-width: 320px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(31, 31, 31, 0.1);
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        color: white;
+        padding: 0rem;
+    }
+    
+    nav .logo{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--negro3);
+        padding: 1rem;
+        width: 290px;
+    }
+
+    nav .logo img{
+        height: 2rem;
+    }
+
+    nav .logo i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        font-size: 1.7rem;
+    }
+    
+    nav .menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(1, 10, 52, 0.838);
+        width: 100%;
+    }
+
+    nav .menu ul{
+        display: flex;
+        flex-direction: column;
+        padding-right: 3.3rem;
+        font-size: 1rem;
+        margin: 2rem 0rem;
+    }
+
+    nav .menu ul li{
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    nav .menu ul li a{
+        background-color: rgb(0, 0, 0, 0);
+        text-decoration: none;
+        color: white;
+    }
+
+    nav .menu ul li:hover{
+        background-color: #0B3860;
+    }
+
+    .menu-hr{
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+        background-color: var(--blanco);
+    }    
 }
