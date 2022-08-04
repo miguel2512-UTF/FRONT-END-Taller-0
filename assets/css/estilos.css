@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto&display=swap');
+
+:root{
+    --azuloclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --azul: #0058A4;
+    --negro: #333333;
+    --negro2: #000;
+    --negro3: #161719;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro3);
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    color: white;
+    padding: 1rem;
+}
+
+nav .logo img{
+    height: 3rem;
+}
+
+nav .menu ul li{
+    display: inline-flex;
+    padding: 1rem;
+}
+
+nav .menu ul li a{
+    background-color: var(--azul);
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.banner{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../img/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.banner h1{
+    color: white;
+    width: 60%;
+    padding: 1rem 0rem 3rem 3rem;
+    font-size: 45px;
+    background-color: rgb(0, 0, 0, 0.35);
+}
+
+.desc{
+    display: flex;
+    padding: 5rem 8rem;
+}
+
+.desc p{
+    padding-right: 6rem;
+}
+
+.desc img{
+    height: 200px;
+}
+
+.servicios{
+    background-image: url(../img/bg-features.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    padding-top: 1rem;
+}
+
+.servicios h2{
+    background-color: rgb(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.servicios-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service{
+    width: 20%;
+    height: 150px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.59);
+}
+
+.service i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.service-blue{
+    background-color: #00325eae;
+}
+
+.ubicanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 1rem;
+}
+
+.ubicanos h2{
+    font-size: 40px;
+}
+
+.ubicanos h3{
+    font-size: 25px;
+    font-weight: normal;
+    padding: 0rem 1rem;
+    margin: 1rem;
+    border-bottom: solid 1px var(--azul);
+}
+
+.ubicanos p{
+    font-family: Times;
+    font-size: 25px;
+}
+
+.ubicanos iframe{
+    width: 97%;
+    margin-top: 2rem;
+}
+
+.reviews{
+    color: var(--blanco);
+    padding-bottom: 8rem;
+}
+
+.reviews h1{
+    font-size: 40px;
+    font-weight: normal;
+    background-color: var(--negro3);
+    text-align: center;
+    padding: 3rem 0rem 8rem 0rem;
+}
+
+.reviews-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-opinion{
+    margin-top: -50px;
+    width: 350px;
+    padding: 1rem;
+    background-color: var(--azuloscuro);
+}
+
+.opinion-user{
+    margin-top: -65px;
+}
+
+.opinion-user h5{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0rem 5rem;
+}
+
+.card-opinion img{
+    width: 60px;
+    border-radius: 100%;
+    margin: 0.5rem;
+}
+
+.puntuacion{
+    margin: 0rem 5rem;
+}
+
+.card-opinion p{
+    margin: 0.5rem;
+    margin-top: 50px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--negro3);
+    color: var(--blanco);
+}
+
+.footer-part{
+    width: 100%;
+    padding: 2rem 5rem;
+    justify-content: center;
+}
+
+.footer-part p{
+    margin: 1rem;
+}
+
+.footer-part i{
+    margin: 0.5rem;
+}
+
+.redes{
+    margin-left: 20px;
+}
+
+.section-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/login-fondo.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 122, 183, 0.80);
+    width: 35%;
+    border-radius: 5px;
+}
+
+.form-logo{
+    background-color: var(--blanco);
+    padding: 1.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.form-logo img{
+    width: 40%;
+}
+
+.form-user{
+    align-self: center;
+    width: 12%;
+    border-radius: 100%;
+    margin: 0.5rem;
+}
+
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4rem;
+    color: var(--blanco);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.form-login form label{
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.form-login form input{
+    padding: 0.3rem;
+    outline: none;
+    border: none;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.form-login form button{
+    margin-top: 2.5rem;
+    font-size: 18px;
+    border: none;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    font-family: Marcellus;
+    background-color: var(--negro2);
+    border-radius: 2px;
+}
+
+.form-login form a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-login form p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.form-login form p a{
+    color: black;
+    text-decoration: none;
+}
+
+.dashboard{
+    display: flex;
+    height: 100vh;
+}
+
+.menu-dashboard{
+    height: 100%;
+    width: 18%;
+    font-family: Marcellus;
+}
+
+.menu-logo{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    background-color: #2C70AA;
+    color: var(--blanco);
+}
+
+.menu-logo h1 img{
+    width: 35%;
+}
+
+.menu-logo h1{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5rem 1.5rem;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+.user-name{
+    align-self: flex-end;
+    margin-right: 1.5rem;
+}
+
+.user-name h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.user-name h3{
+    font-size: 9px;
+    font-weight: normal;
+}
+
+.menu-option{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    background-color: #303342;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    margin-right: 0.5rem;
+    color: var(--blanco);
+}
+
+.option:hover{
+    background-color: var(--azuloscuro);
+}
+
+.option p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.option i{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.option-2{
+    padding: 0.3rem 1rem;
+}
+
+.option-2 i{
+    font-size: 1.9rem;
+}
+
+.cerrar-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-top: 170px;
+    margin-left: 10px;
+    background-color: #3B3E4F;
+    color: var(--blanco);
+}
+
+.cerrar-sesion p{
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+.cerrar-sesion i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.cerrar-sesion a{
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-content{
+    width: 95%;
+    background-image: url(../img/dashboard-fondo.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-dash{
+    padding: 1.75rem 2rem;
+    backdrop-filter: brightness(50%);
+}
+
+.info-user{
+    display: flex;
+    backdrop-filter: blur(3px);
+    background-color: rgb(239, 240, 240,0.85);
+    border-radius: 5px;
+}
+
+.section-foto{
+    margin: 4.7rem 1rem 0rem 3rem;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.section-foto img{
+    width: 130px;
+    height: 130px;
+}
+
+.foto-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    background-color: #337AB7;
+    font-size: 1.9rem;
+    margin-top: 0.1rem;
+}
+
+.foto-options i{
+    color: white;
+    margin: 0.2rem 0.8rem;
+}
+
+.fa-upload{
+    font-size: 1.4rem;
+}
+
+.section-foto button{
+    margin-top: 1.2rem;
+    width: 130px;
+    border: none;
+    color: white;
+    background-color: var(--negro);
+    font-family: Marcellus;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+}
+
+.form-usuario{
+    width: 75%;
+    margin-right: 1rem;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.form-usuario h1{
+    padding-top: 1rem;
+    font-family: Marcellus;
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.form-usuario form{
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-usuario label{
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.form-usuario input{
+    margin-right: 1.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-usuario button{
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    width: 195px;
+    color: white;
+    font-family: Marcellus;
+    background-color: var(--negro3);
+    border-radius: 2px;
+}
+
+.form-info-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-info-2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-password{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-password-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-password-2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.add-huesped{
+    display: flex;
+    background-image: url(../img/background-add.avif);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(22, 73, 114,0.9)
+}
+
+.header img{
+    width: 125px;
+}
+
+.header h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.header h3{
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 2rem 5rem;
+    text-align: center;
+}
+
+.add-content{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    background-color: rgb(239, 240, 240,0.85);
+    margin: 1.5rem 2.5rem;
+    border-radius: 5px;
+    width: 800px;
+}
+
+.form h1{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.form-body{
+    margin: 0rem 2rem;
+    display: flex;
+}
+
+.form-body label{
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.form-body input{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-file[type=file]{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-body select{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-genero{
+    display: flex;
+    padding: 0.3rem 0rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-genero input{
+    margin-right: 0.1rem;
+}
+
+.form-genero p{
+    margin-right: 1.5rem;
+}
+
+.form-body-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-body-1 input{
+    margin-right: 1.5rem;
+}
+
+.form-body-1 select{
+    margin-right: 1.5rem;
+}
+
+.form-body-2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.form-footer p{
+    font-weight: bold;
+}
+
+.form-footer button{
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem;
+    width: 195px;
+    color: white;
+    font-family: Marcellus;
+    background-color: var(--negro3);
+    border-radius: 2px;
+}
+
+.form-footer a{
+    color: white;
+    text-decoration: none   ;
+}
