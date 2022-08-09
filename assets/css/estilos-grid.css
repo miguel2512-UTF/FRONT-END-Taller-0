@@ -32,19 +32,24 @@ h1,h2,h3,h4,h5{
 @media screen and (min-width: 320px) and (max-width: 1024px){
 
     nav{
-        display: flex;
-        flex-direction: column;
-        font-family: 'Marcellus', serif;
+        display: grid;
+        grid-template-areas: 
+            "logo"
+            "menu";
+        font-family: "Marcellus", serif;
         color: white;
-        overflow: hidden;
         position: fixed;
         width: 100%;
         z-index: 5;
     }
     
     nav .logo{
-        display: flex;
-        justify-content: space-between;
+        grid-area: logo;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo-img menu-bars";
         background-color: var(--negro3);
         padding: 1rem;
     }
@@ -54,32 +59,30 @@ h1,h2,h3,h4,h5{
     }
 
     nav .logo i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        grid-area: menu-bars;
+        justify-self: end;
         height: 2rem;
         font-size: 1.7rem;
     }
     
     nav .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        grid-area: menu;
+        display: grid;
         background-color: rgba(1, 10, 52, 0.838);
         width: 100%;
+        /* transform: translate(100%); */
     }
 
     nav .menu a{
         color: white;
         text-decoration: none;
-        padding: 1rem;
+        padding: 1rem 0;
+        text-align: center;
     }
 
     nav .menu a:hover{
         background-color: #0B3860;
         width: 100%;
-        text-align: center;
     }
     
     #iniciar-sesion{
@@ -115,7 +118,6 @@ h1,h2,h3,h4,h5{
     } */
 
     .menu-hr{
-        display: block;
         width: 90%;
         background-color: var(--blanco);
         margin: auto;
