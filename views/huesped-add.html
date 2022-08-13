@@ -14,6 +14,7 @@
         <div class="header">
             <h1><img src="../assets/img/hotelia campana.svg" alt="">otelia</h1>
             <h3>Eres más que bienvenido</h3>
+            <h4>Un lugar en tu corazón</h4>
         </div>
         <div class="add-content">
             <div class="form">
@@ -22,7 +23,9 @@
                     <div class="form-body">
                         <div class="form-body-1">
                             <label for="">Tipo de documento</label>
-                            <input type="text" placeholder="Escoja una opción">
+                            <select name="" id="">
+                                <option value="" selected>Escoja una opción</option>
+                            </select>
                             <label for="">Nombres</label>
                             <input type="text">
                             <label for="">Fecha nacimiento</label>
@@ -54,12 +57,21 @@
                         </div>
                     </div>
                     <div class="form-footer">
-                        <p>Acepto Términos y Condiciones</p>
+                        <a href="#miModal"><p>Acepto Términos y Condiciones</p></a>
                         <button><a href="login.html">Ingresar</a></button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <a href="#">X</a>
+            <h2>Mi primer Modal</h2>
+            <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
+        </div>  
+    </div>
+
 </body>
 </html>
