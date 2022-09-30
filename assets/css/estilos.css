@@ -2031,14 +2031,54 @@ h1,h2,h3,h4,h5{
     }  
 
     .modal-contenido{
-        background-color:aqua;
-        width:300px;
-        padding: 10px 20px;
+        background-color:white;
+        width:450px;
         margin: 20% auto;
         position: relative;
+        border-radius: 5px;
+    }
+
+    .modal-contenido h2{
+        background-color: rgb(37,100,154);
+        font-weight: normal;
+        font-size: 1.6rem;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .modal-contenido p{
+        padding: 2rem;
+        padding-bottom: 0rem;
     }
     
+    .modal-cerrar{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .modal-contenido a{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        border: none;
+        padding: 0.2rem;
+        width: 75px;
+        color: white;
+        font-family: Marcellus;
+        background-color: var(--negro3);
+        border-radius: 2px;
+        text-align: center;
+        text-decoration: none;
+    }
+
     .modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(0,0,0,.8);
         position:fixed;
         top:0;
